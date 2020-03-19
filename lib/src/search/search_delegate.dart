@@ -6,19 +6,6 @@ class DataSearch extends SearchDelegate {
 
   final peliculasProvider = PeliculasProvider();
 
-  // final peliculas = [
-  //   'Spiderman',
-  //   'Aquaman',
-  //   'Batman',
-  //   'Iroman',
-  //   'Shazam',
-  // ];
-
-  // final peliculasRecientes = [
-  //   'Spiderman', 
-  //   'Capitan America'
-  // ];
-
   String seleccion = '';
 
   @override
@@ -104,25 +91,6 @@ class DataSearch extends SearchDelegate {
 
       },
     );
-    // final listaSugerida = (query.isEmpty) 
-    //                       ? peliculasRecientes 
-    //                       : peliculas.where(
-    //                         (p) => p.toLowerCase().startsWith(query.toLowerCase())
-    //                       ).toList();
-
-    // return ListView.builder(
-    //   itemCount: listaSugerida.length,
-    //   itemBuilder: (context, i) {
-    //     return ListTile(
-    //       leading: Icon(Icons.movie),
-    //       title: Text(listaSugerida[i]),
-    //       onTap: () {
-    //         seleccion = listaSugerida[i];
-    //         showResults(context);
-    //       },
-    //     );
-    //   },
-    // );
   }
 
 }

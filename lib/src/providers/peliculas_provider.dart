@@ -1,13 +1,14 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:peliculas/secrets.dart';
 
 import 'package:peliculas/src/models/actores_model.dart';
 import 'package:peliculas/src/models/pelicula_model.dart';
 
 class PeliculasProvider {
 
-  String _apiKey   = '7373ed7f052f4d12f98334b048bde3a5';
+  String _apiKey   = Secrets.accessTokenTheMovieDB;
   String _url      = 'api.themoviedb.org';
   String _language = 'es-ES';
 
